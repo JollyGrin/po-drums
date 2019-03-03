@@ -1,0 +1,11 @@
+html {
+	background: rgb(127, 127, 127);
+}
+
+body, .title {
+	color: rgb(178, 178, 178);
+}
+
+.tile {
+	background: rgb(127, 127, 127); 
+}
