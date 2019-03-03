@@ -7,13 +7,19 @@
     <title>🥁 Drum Kits</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/edit.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style type="text/css">
     	.po {
             -webkit-background-size: flex;
               -moz-background-size: cover;
               -o-background-size: cover;
               background-size: cover;
-        };
+        }
+
+      .fa, .fas {
+        font-size: 3em;
+      };
+
     </style>
   </head>
   <body>
@@ -85,7 +91,28 @@
                   <a href="https://synth.playtronica.com/" class="button is-primary is-inverted is-outlined">Playtronica</a>
 
                 </div>
-              </div>            
+              </div>
+
+              <div class="tile is-vertical is-parent">
+                <div class="tile is-child box">
+                  <p class="title">One-Hits</p>
+
+                  <br>
+
+                  <a onclick="eight.play()">
+                    <i id="eight" class="fas fa-drum-steelpan"></i>
+                  </a>
+                  <a onclick="kick.play()">
+                    <i id="kick" class="fas fa-shoe-prints"></i>
+                  </a>
+                  <a onclick="snare.play()">
+                    <i id="snare" class="fas fa-drum"></i>
+                  </a>
+
+
+
+                </div>
+              </div>              
             </div>
 
             <br><br><br>
@@ -134,6 +161,7 @@
       </div>
     </footer> -->
     <script type="text/javascript" src="lib/main.js"></script>
+    <script type="text/javascript" src="lib/audio.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
   </body>
 </html>
